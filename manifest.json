@@ -1,0 +1,16 @@
+{
+    "short_name": "Yowl",
+    "name": "",
+    "icons": [
+        {
+            "src": "./icon.png",
+            "sizes": "48x48 72x72 96x96 144x144",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "background_color": "#000",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#888"
+}
