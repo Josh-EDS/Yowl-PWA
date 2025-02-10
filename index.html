@@ -120,8 +120,25 @@
 		navigator.serviceWorker.register('service-worker.js')
 		.then(function(){
 			console.log("Service worker enregistré")
-	})
-}</script>
+	})}
+    
+    function checkCookies() {
+    const cookies = document.cookie.split(';');
+    const cookieObj = {};
+    cookies.forEach(cookie => {
+        const [key, value] = cookie.trim().split('=');
+        cookieObj[key] = value;
+    });
+
+    if (cookieObj.username || cookieObj.password) {
+        window.location.href = '/';
+    }
+    }
+
+    checkCookies();
+
+    
+    </script>
 <script>
     new WOW().init();
     
